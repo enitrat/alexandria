@@ -4,6 +4,9 @@ use option::OptionTrait;
 use traits::TryInto;
 use traits::Into;
 
+impl ArrayU32Drop of Drop::<Array::<u32>>;
+impl ArrayU256Drop of Drop::<Array::<u256>>;
+
 /// Panic with a custom message.
 /// # Arguments
 /// * `msg` - The message to panic with. Must be a short string to fit in a felt.
@@ -46,13 +49,13 @@ fn unsafe_euclidean_div(a: felt, b: felt) -> (felt, felt) {
     ((a_u128 / b_u128).into(), (a_u128 % b_u128).into())
 }
 
-fn max(a: felt, b: felt) -> felt {
-    if a > b {
-        return a;
-    } else {
-        return b;
-    }
-}
+// fn max(a: felt, b: felt) -> felt {
+//     if a > b {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
 
 // Function to count the number of digits in a number.
 /// # Arguments

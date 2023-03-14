@@ -20,6 +20,8 @@ use quaireaux::utils::array_slice;
 
 const ZERO_USIZE: usize = 0_usize;
 
+impl ArrayU256Drop of Drop::<Array::<u256>>;
+
 #[derive(Drop)]
 struct Stack {
     elements: Array::<u256>, 

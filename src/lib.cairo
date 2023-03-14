@@ -1,11 +1,11 @@
 // Math module
-mod math;
+// mod math;
 
 // Data structures module
 mod data_structures;
 
 // Sorting module
-mod sorting;
+// mod sorting;
 
 // Utils module
 mod utils;
